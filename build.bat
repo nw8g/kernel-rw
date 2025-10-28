@@ -3,7 +3,7 @@ setlocal
 
 where nasm >nul 2>&1
 if %errorlevel% neq 0 (
-    echo NASM not found! Download from https://www.nasm.us/ and add to PATH.
+    echo nasm not found, download from https://www.nasm.us/ and add to path
     pause
     exit /b 1
 )
@@ -33,3 +33,4 @@ cmake --build . --config Release || (
 
 echo BUILD SUCCESS! driver at build\output\Release\driver.sys
 pause
+
